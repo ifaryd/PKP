@@ -1,0 +1,99 @@
+/*
+*Pagination
+**/
+.cd-pagination {
+  padding-left: 0;
+  //width: 90%;
+  //max-width: 768px;
+  /*margin: 2em auto 4em;*/
+  //text-align: center;
+}
+.cd-pagination li {
+    /*display: inline-block;
+    *display: inline;*/
+    float: left;
+    margin: 0 .2em;
+    list-style: none;
+    text-align: center;
+  /* hide numbers on small devices */
+  /*display: none;
+  margin: 0 .2em;*/
+}
+.cd-pagination li.button {
+  /* make sure prev next buttons are visible */
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.cd-pagination a, .cd-pagination span {
+  /*display: inline-block;
+  *display: inline-block;*/
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #222;
+  /* use padding and font-size to change buttons size */
+  padding: 5px 8px;
+  //background: linear-gradient(to top,#fff 0%, #f1f1f1 100%);
+  //font-size: 1.6rem;
+}
+.cd-pagination a {
+  border: 1px solid #e6e6e6;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+  //border-radius: 0.15em;
+}
+.no-touch .cd-pagination a:hover {
+  background-color: #f2f2f2;
+}
+.cd-pagination a:active {
+  /* click effect */
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.cd-pagination a.disabled {
+  /* button disabled */
+  //color: rgba(46, 64, 87, 0.4);
+  color: #B0B7C5;
+  pointer-events: none;
+}
+.cd-pagination a.disabled::before, .cd-pagination a.disabled::after {
+  opacity: .4;
+}
+
+.cd-pagination {
+
+  .prev-btn:before {
+    content: '\00ab  ';
+    
+  }
+  .next-btn:after {
+    content: ' \00bb';
+    
+  }
+}
+
+.cd-pagination .current {
+  /* selected number */
+  background-color: #844B26;
+  border-color: #844B26;
+  color: #fff;
+  pointer-events: none;
+}
+/*@media only screen and (min-width: 768px) {
+  .cd-pagination li {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-pagination {
+    margin: 4em auto 8em;
+  }
+}*/

@@ -1,0 +1,279 @@
+{% load static %}
+{% load active_link_tags %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Prophète Kacou Philippe &mdash; Portail du Ciel | {% block title %}{% endblock title %}</title> 
+    	<!--<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>-->
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'img/apple-touch-icon-57x57.png' %}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{% static 'img/apple-touch-icon-60x60.png' %}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png' %}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-touch-icon-76x76.png' %}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{% static 'img/apple-touch-icon-120x120.png' %}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{% static 'img/apple-touch-icon-144x144.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-32x32.png' %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-96x96.png' %}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon-16x16.png' %}" sizes="16x16">
+    <link rel="manifest" href="https://www.philippekacou.org/manifest.json">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="{% static 'img/mstile-144x144.png' %}">
+    <meta name="msapplication-config" content="https://www.philippekacou.org/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet"  href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/1200_12_10_10.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/superfish.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/bar-ui.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/zabuto_calendar.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/jquery.fancybox.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet"  href="{% static 'css/styles.css' %}">
+    
+</head>
+<body class="front-page">
+	<a href="#" title="Aller en haut" class="btn-up">
+        Aller en haut de page <span class="icon icon-arrow-top"></span>
+    </a>
+    <div id="fb-root"></div>
+    <script>
+        
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/"+locale+"/sdk.js#xfbml=1&version=v2.6";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        
+
+    </script>
+    <div id="page" class="page container_12">
+        <header class="site-header" role="banner">
+            <div class="header-top clearfix">
+                <div class="logo-wrapper grid_2">
+                    <a href="https://www.philippekacou.org/fr" class="logo">
+                        <img src="{% static 'img/logo-pkacou.png' %}"  alt="Logo" title="Aller à la page d'accueil" class="img_responsive" />
+                    </a>
+                </div>
+                <div class="grid_7 text-center alpha">
+                    <ul class="languages-list list-inline">
+                        <li><a href="https://www.philippekacou.org/fr"><img src="https://www.philippekacou.org/assets/front/images/flags/France_flat.png"  alt="Français" /></a></li>
+                        <li><a href="https://www.philippekacou.org/en"><img src="https://www.philippekacou.org/assets/front/images/flags/UK_flat.png"  alt="Anglais" /></a></li>
+                        <li><a href="https://www.philippekacou.org/es"><img src="https://www.philippekacou.org/assets/front/images/flags/Spain_flat.png"  alt="Espagnol" /></a></li>
+                        <li><a href="https://www.philippekacou.org/pt"><img src="https://www.philippekacou.org/assets/front/images/flags/Portugal_flat.png"  alt="Portuguais" /></a></li>
+                        <!-- <li><a href="https://www.philippekacou.org/de"><img src="https://www.philippekacou.org/assets/front/images/flags/German_flat.png"  alt="Allemand" /></a></li> -->
+                    </ul>
+                    <div class="verse text-muted" lang="fr">
+                         <p class="text-justify">
+                            Comme les prophètes de la Bible, en avril 1993, un homme qui n'avait jamais été dans une église reçoit en vision, 
+la visitation d'un Ange qui le commissionne pour un Message destiné au Salut de l'humanité en accomplissement de 
+<strong>Matth.25:6</strong> et d'<strong>Apoc.12:14</strong>.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid_3 last-block">
+                     <div class="text-right text-muted small">
+                        Vous êtes le <span class="counter-digit bg-brown text-bold">7 975 190</span> <sup>ème</sup> visiteur du site depuis Avril 2007
+                        
+                    </div>
+                    <div class="download download-fr">
+                        <a href="https://play.google.com/store/apps/details?id=com.matth25.prophetekacou">
+                            <img src="https://www.philippekacou.org/assets/front/images/Ban_GPlay_fr.png"  alt="Application Android" class="img-responsive" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+            <nav class="site-navigation clearfix" role="navigation">
+                
+    <ul class="sf-menu list-unstyled" id="main-menu">
+        <li class="current">
+            <a href="https://www.philippekacou.org/fr">Accueil</a>
+        </li>
+        <li>
+            <a href="#">Prédications</a>
+            <ul class="dropdown">
+                <li><a href="predications">Prédications écrites</a></li>
+                <li><a href="videos">Prédications vidéos</a></li>
+                <li><a href="audio">Prédications audio</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#">Médias</a>
+            <ul class="dropdown">
+                <li><a href="ecrite">Presse écrite</a></li>
+                <li><a href="radio">Emissions radio</a></li>
+                <li><a href="emissions-tv">Emissions TV</a></li>
+                <li class="hide"><a href="autres-videos">Autres vidéos</a></li>
+            </ul>
+        </li>
+         <li>
+            <a href="https://www.philippekacou.org/fr/galerie">Galérie Photos</a>
+
+        </li>
+        <li>
+            <a href="#">Ressources</a>
+            <ul class="dropdown">
+                <li><a href="temoignages">Témoignages</a></li>
+                <li><a href="actualites">Actualités</a></li>
+                <li><a href="https://www.evernote.com/pub/eclipse29/INTERNET-FRANCAIS">Les pépites d'or</a></li>
+                <li><a href="aide">Aide pour la lecture</a></li>
+                <li><a href="logiciel">Logiciels importants</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Adorations</a>
+            <ul class="dropdown">
+                <li><a href="https://www.philippekacou.org/fr/adorations/louanges">Louanges</a></li>
+                <li><a href="https://www.philippekacou.org/fr/adorations/melodies">Mélodies</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.philippekacou.org#">Le Cri de minuit dans le monde</a>
+        </li>
+        <!-- <li>
+            <a href="https://www.philippekacou.org/fr/traduction-audio">Traduction</a>
+        </li> -->
+        <li class="last">
+            <a href="{% url 'contact' %}" class="{% active_link 'contact' 'active' %}">Contacts</a>
+        </li>
+    </ul>
+
+            </nav>
+        </header>
+        <div class="site-content clearfix"> 
+            {% block breadcumb %}{% endblock breadcumb %}
+            
+	
+	{% block wrapper %}
+	{% endblock wrapper %}
+
+
+
+	<div class="clearfix">
+		
+        {% block content %}
+        {% endblock content %} 
+
+
+
+		{% block sidebar %}
+		{% endblock sidebar %}
+		
+	</div>
+
+        </div> <!-- .site-content -->
+    	<footer class="site-footer">
+            <div class="clearfix">
+                <div class="grid_2 block block-footer">
+                    <h4 class="title">Prédications</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="ecrites">Prédications écrites</a></li>
+                        <li><a href="videos">Prédications vidéos</a></li>
+                        <li><a href="audio">Prédications audio</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <h4 class="title">Médias</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="presse-ecrite">Presse écrite</a></li>
+                        <li><a href="emissions-radio">Emissions radio</a></li>
+                        <li><a href="emissions-tv">Emissions TV</a></li>
+                        <li><a href="autres-videos">Autres vidéos</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2">
+                    <h4 class="title">Ressources</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="temoignages">Témoignages</a></li>
+                        <li><a href="actualites">Actualités</a></li>
+                        <li><a href="aide-pour-la-lecture">Aide pour la lecture</a></li>
+                        <li><a href="logiciels-importants">Logiciels importants</a></li>      
+                    </ul>
+                </div>
+                <div class="grid_3">
+                    <h4 class="title">Newsletter</h4>
+                    <p>Recevez dans votre boite mail les actualités et prédications du prophète</p>
+                    <form class="newsletter-form small" method="post" data-action="https://www.philippekacou.org/ajax/subscribe">
+                        <input type="email" name="subscriber_email" placeholder="Entrez votre adresse mail" required />
+                        <button class="form-btn">OK</button>
+                    </form>
+                </div>
+                <div class="grid_3 small">
+                    <h4 class="title">Contacts du prophète</h4>
+                    <div class="infos-contact block">
+                        <dl>
+                            <dt>Téléphone Mobile</dt>
+                             <dd>(+225) 08000789 (Apôtre Aman Martin)</dd>
+                             <dd>(+225) 74747430 (Apôtre Aman Martin)</dd>
+                            <dt>Email</dt>
+                            <dd class="font-bold"><script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%6b%61%63%6f%75%2e%70%68%69%6c%69%70%70%65%40%67%6d%61%69%6c%2e%63%6f%6d%22%20%3e%6b%61%63%6f%75%2e%70%68%69%6c%69%70%70%65%40%67%6d%61%69%6c%2e%63%6f%6d%3c%2f%61%3e%27%29%3b'))</script></dd>
+                            <dt>Adresse Postale</dt>
+                            <dd>BP 374 Sikensi (Côte d'Ivoire)</dd>
+                            <dt>Skype</dt>
+                            <dd class="font-bold"><a href="skype:kacou.philippe"><span class="fa fa-skype"></span> kacou.philippe</a></dd>
+                            <dt>Facebook</dt>
+                             
+                            <dd class="font-bold"><a href="https://www.facebook.com/kacou.philippe" class="font-bold"><span class="fa fa-facebook-square"></span> prophete.kacou</a></dd>
+                        </dl>
+                    </div>
+                    <div class="download">
+                        <a href="https://play.google.com/store/apps/details?id=com.matth25.prophetekacou">
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <small>&#169; Prophète Philippe Kacou <script>document.write(new Date().getFullYear());</script> &mdash; Tous droits réservés</small> | 
+                <a href="https://www.philippekacou.org/fr/nous-contacter" class="small">Nous contacter</a>
+            </div>
+        </footer><!-- .site-footer -->
+    </div>
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.easy-ticker.min.js' %}"></script>
+    <script src="{% static 'js/hoverIntent.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+    <script src="{% static 'js/jquery.cycle2.min.js' %}"></script>
+    <script src="{% static 'js/video.js' %}"></script>
+    <script src="{% static 'js/superfish.js' %}"></script>
+    <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'js/jquery.lazyload.min.js' %}"></script>
+    <script src="{% static 'js/zabuto_calendar.js' %}"></script>
+    <script src="{% static 'js/jquery.slimscroll.min.js' %}"></script>
+    <script src="{% static 'js/soundmanager2-nodebug-jsmin.js' %}"></script>
+    <script src="{% static 'js/bar-ui.js' %}"></script>
+    
+	<script src="{% static 'js/jquery.easy-ticker.min.js' %}"></script>
+	<script src="{% static 'js/jquery.imagescale.min.js' %}"></script>
+	<script>
+		var $annonce_ticker = $('.annonces-ticker');
+		if ($annonce_ticker.find('li').length > 1) {
+			$annonce_ticker.easyTicker({
+				visible: 1,
+			
+				speed: 5000
+			});
+		}
+
+		 $('.img-wrapper').find('img').imageScale({ scale: 'best-fill' });
+		
+	</script>
+
+    <script src="{% static 'js/scripts.js' %}"></script>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer>
+
+        
+    </script>
+</body>
+</html>

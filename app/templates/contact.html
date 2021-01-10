@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Nous contacter
+{% endblock title %}
+
+{% block breadcumb %}
+<ol class="breadcrumb"><li><a href="https://www.philippekacou.org/fr">Accueil</a></li>
+    <li class="active"><span>Nous contacter</span></li>
+    </ol>
+{% endblock breadcumb %}
+
+{% block wrapper %}
+
+{% endblock wrapper %}
+
+{% block content %}
+<div class="grid_9">
+<section class="page-section contact">
+    <h1 class="page-header">Nous contacter</h1>
+ <p class="text-justify text-intro alert alert-info">
+   <!-- <strong>Information importante:</strong> Compte tenu de l'extension du Message dans le monde entier, desormais vous pouvez appeler le Prophète à tout moment et à partir de n'importe quel numéro de téléphone même d'une cabine, d'un bureau,... !<br /> Veuillez informer ceux qui ne le savent pas!-->
+    </p> 
+ <section class="page-subsection">
+     <h1 class="title2 font-20">Contacts du prophète</h1>
+     <div class="subsection-content">
+          <dl>
+             <dt>Téléphone Mobile</dt>
+             <dd>(+225) 08000789 (Apôtre Aman Martin)</dd>
+             <dd>(+225) 74747430 (Apôtre Aman Martin)</dd>
+             <dt>Email</dt>
+             <dd class="font-bold"><script type="text/javascript">eval(unescape('%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%27%3c%61%20%68%72%65%66%3d%22%6d%61%69%6c%74%6f%3a%6b%61%63%6f%75%2e%70%68%69%6c%69%70%70%65%40%67%6d%61%69%6c%2e%63%6f%6d%22%20%3e%6b%61%63%6f%75%2e%70%68%69%6c%69%70%70%65%40%67%6d%61%69%6c%2e%63%6f%6d%3c%2f%61%3e%27%29%3b'))</script><a href="mailto:kacou.philippe@gmail.com">kacou.philippe@gmail.com</a></dd>
+             <dt>Adresse Postale</dt>
+             <dd>BP 374 Sikensi (Côte d'Ivoire)</dd>
+                <dt>Skype</dt>
+             <dd class="font-bold"><a href="skype:kacou.philippe">kacou.philippe</a></dd>
+
+         </dl>
+         <p class="text-justify">
+            Vous pouvez aussi envoyer un message au Prophète Kacou Philippe via facebook et il le recevra directement sur son téléphone mobile comme un sms. Compte facebook: <a href="https://www.facebook.com/kacou.philippe" class="font-bold"><span class="fa fa-facebook-square"></span> prophete.kacou</a> 
+          </p>
+     </div>
+ </section>
+ <section class="page-subsection">
+     <h1 class="title2 font-20">Envoyer un mail au prophète</h1>
+     
+                 <div class="subsection-content">
+           <p>Vous pouvez utiliser aussi ce formulaire pour envoyer un message au prophète</p>
+         <form method="post" class="contact-form" data-parsley-validate="">
+             <div class="clearfix">
+                 <div class="grid_3 alpha">
+                     <div class="form-line">
+                         <label for="name">Nom</label>
+                         <input type="text" name="name" id="name" value="" required="">
+                     </div>
+                     <div class="form-line">
+                         <label for="surname">Prénoms</label>
+                         <input type="text" name="surname" id="surname" value="" required="">
+                     </div>
+                     <div class="form-line">
+                         <label for="email">Email</label>
+                         <input type="email" name="email" id="email" value="" required="">
+                     </div>
+                 </div>
+                 <div class="grid_6 omega">
+                    <div class="form-line">
+                         <label for="subject">Sujet</label>
+                         <input type="text" name="subject" id="subject" value="" required="">
+                    </div>
+                     <div class="form-line">
+                         <label for="message">Votre Message</label>
+                         <textarea name="message" id="message" rows="8" required=""></textarea>
+                    </div>
+                 </div>
+             </div>
+             <div class="form-submit">
+                 <button>Envoyer le message</button>
+             </div>
+         </form>
+     </div>
+ </section>
+</section>
+</div>
+{% endblock content %}
+
+{% block sidebar %}
+<div class="sidebar grid_3">
+	
+			
+			
+<div class="block block-photo">
+    <div class="block-heading bg-brown-light">
+        <h3 class="block-title text-center"><a href="http://plus.wikimonde.com/wiki/Kacou_Philippe">Qui est Kacou Philippe ?</a></h3>
+    </div>
+    <div class="block-content">
+        <img src="https://www.philippekacou.org/medias/Proph_Kacou.jpg" alt="Photo Kacou Philippe">
+    </div>
+</div>
+			
+<div class="block block-events">
+    <div id="calendar-events"></div>
+</div>
+			
+<div class="block block-youtube">
+  	<script src="https://apis.google.com/js/platform.js"></script>
+
+  	<script>
+	    function onYtEvent(payload) {
+	      if (payload.eventType == 'subscribe') {
+	        // Add code to handle subscribe event.
+	      } else if (payload.eventType == 'unsubscribe') {
+	        // Add code to handle unsubscribe event.
+	      }
+	      if (window.console) { // for debugging only
+	        window.console.log('YT event: ', payload);
+	      }
+	    }
+  	</script>
+  	<div class="g-ytsubscribe" data-channelid="UCftczJxNXFFVprY3GOultzQ" data-layout="full" data-theme="dark" data-count="default" data-onytevent="onYtEvent"></div>
+</div>
+			
+<div class="block block-socials bordered padding bordered-gray">
+    <div class="block-heading">
+        <h3 class="block-title text-muted">Réseaux sociaux</h3>
+    </div>
+    <div class="block-content">
+        <ul class="list-inline text-center">
+            <li><a href="https://www.facebook.com/kacou.philippe"><img src="https://www.philippekacou.org/assets/front/images/facebook_square_32.png"  title="Suivez nous sur facebook" /></a></li>
+            <li><a href="http://twitter.com/prophet_kacou"><img src="https://www.philippekacou.org/assets/front/images/twitter_square_32.png"  title="@kacou_phillipe" /></a></li>
+            <li><a href="https://plus.google.com/+PhilippekacouOrgChannelTV "><img src="https://www.philippekacou.org/assets/front/images/google_plus_square_32.png"  title="Suivez nous sur G+" /></a></li>
+        </ul>
+    </div>
+</div>
+
+			
+<div class="block block-module-facebook">
+    <div class="fb-page" data-href="https://www.facebook.com/kacou.philippe" data-width="280" 
+    data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
+        <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/kacou.philippe">
+                <a href="https://www.facebook.com/kacou.philippe">Prophète Philippe Kacou</a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+	
+		</div>
+{% endblock sidebar %}
