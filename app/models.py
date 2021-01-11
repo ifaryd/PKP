@@ -42,3 +42,8 @@ class Verset(models.Model):
     class Meta:
         db_table = 'verset'
 
+class Titre(models.Model):
+    titre = models.TextField()
+    nombre = models.TextField()
+    class Meta:
+        db_table = 'titre'

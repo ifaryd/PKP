@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'PKP.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'matth25v6.db',
+        'NAME': 'matth25v6',
     }
 }
 
