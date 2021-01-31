@@ -48,6 +48,7 @@ class Verset(TranslatableModel):
     id_parab = models.TextField())
     class Meta:
         db_table = 'verset'
+        
 
 class Titre(models.Model):
     titre = models.TextField()

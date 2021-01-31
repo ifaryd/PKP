@@ -1,0 +1,9 @@
+drwxr-xr-x    2 5010       client8          4096 Oct 30  2016 .
+drwxr-xr-x    8 5010       client8          4096 Oct 30  2016 ..
+-rw-r--r--    1 5010       client8          1537 Oct 30  2016 default_thumb.png
+-rw-r--r--    1 5010       client8          6331 Oct 30  2016 loader.gif
+-rw-r--r--    1 5010       client8          6682 Oct 30  2016 sprite.png
+-rw-r--r--    1 5010       client8          1358 Oct 30  2016 sprite_next.png
+-rw-r--r--    1 5010       client8          1376 Oct 30  2016 sprite_prev.png
+-rw-r--r--    1 5010       client8          1097 Oct 30  2016 sprite_x.png
+-rw-r--r--    1 5010       client8          1162 Oct 30  2016 sprite_y.png
