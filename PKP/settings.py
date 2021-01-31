@@ -35,11 +35,29 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'app',
-    'active_link'
+    'app.apps.AppConfig',
+    
+    'active_link',
+    
+    'parler',
 ]
+SITE_ID = 1
+PARLER_DEFAULT_LANGUAGE_CODE = 'fr'
+PARLER_LANGUAGES = {
+    1: (
+        {'code': 'fr',},
+        {'code': 'en',},
+        {'code': 'it',},
+        {'code': 'nl',},
+    ),
+    'default': {
+        'fallbacks': ['fr'],          # defaults to PARLER_DEFAULT_LANGUAGE_CODE
+        'hide_untranslated': False,   # the default; let .active_translations() return fallbacks too.
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,7 +96,7 @@ WSGI_APPLICATION = 'PKP.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'matth25v6',
+        'NAME': 'matth25v8',
     }
 }
 
@@ -105,7 +123,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr'
 
 TIME_ZONE = 'UTC'
 
