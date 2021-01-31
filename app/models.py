@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Create your models here.x
 class Actualite(models.Model):
     date = models.TextField()
     heure = models.TextField()
@@ -41,6 +41,7 @@ class Verset(models.Model):
     id_parab = models.TextField()
     class Meta:
         db_table = 'verset'
+        
 
 class Titre(models.Model):
     titre = models.TextField()
